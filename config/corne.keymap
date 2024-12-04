@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 3 ESCAPE  &kp Q  &kp W  &kp E            &kp R                 &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB       &kp A  &kp S  &kp D            &kp F                 &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&lt 3 GRAVE   &kp Z  &kp X  &kp C            &kp V                 &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                            &lt 2 BACKSPACE  &mt LEFT_SHIFT SPACE  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&lt 3 ESCAPE  &kp Q  &kp W  &kp E            &kp R                 &kp T          &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB       &kp A  &kp S  &kp D            &kp F                 &kp G          &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&lt 3 GRAVE   &kp Z  &kp X  &kp C            &kp V                 &kp B          &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                            &lt 2 BACKSPACE  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -50,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp PLUS   &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LEFT_BRACE          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp MINUS  &kp ASTRK        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_PARENTHESIS    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                             &kp LGUI         &trans           &kp SPACE               &kp RET    &trans     &kp RALT
+&kp PLUS   &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp MINUS  &kp ASTRK        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                             &kp LGUI         &trans           &kp SPACE               &kp RET                &trans     &kp RALT
             >;
         };
 
