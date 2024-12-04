@@ -9,6 +9,19 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow_mods";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,10 +33,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 3 ESCAPE  &kp Q  &kp W  &kp E            &kp R                 &kp T          &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB       &kp A  &kp S  &kp D            &kp F                 &kp G          &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&lt 3 GRAVE   &kp Z  &kp X  &kp C            &kp V                 &kp B          &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                            &lt 2 BACKSPACE  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &kp RET  &mo 2  &kp RALT
+&lt 3 ESCAPE  &kp Q           &kp W           &kp E            &kp R                 &kp T          &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB       &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D      &hm LEFT_SHIFT F      &kp G          &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&lt 3 GRAVE   &kp Z           &kp X           &kp C            &kp V                 &kp B          &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                              &lt 2 BACKSPACE  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &kp RET  &mo 2  &kp RALT
             >;
         };
 
